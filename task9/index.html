@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form>
+<select id="colorSelect">
+<option>Blue</option>
+<option>Purple</option>
+<option>White</option>
+<option>Black</option>
+<option>Orange</option>
+<option>Idk</option>
+<option>Wood</option>
+<option>Red</option>
+</select>
+<input type="button" onclick="countItems()" value="Count Items">
+</form>
+
+ <script>
+    function countItems() {
+        var select = document.getElementById("colorSelect");
+        var count = select.options.length;
+        alert("Number of items in the dropdown list: " + count);
+    }
+</script>   
+</body>
+</html>

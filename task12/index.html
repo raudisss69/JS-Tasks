@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">We have just started this section for the users (beginner to intermediate) who want to work with various <b>JavaScript</b> problems and write scripts to test their <b>JavaScript</b> skill.</p>
+    <script>
+        var boldWords = document.getElementsByTagName("b");
+        for (var i = 0; i < boldWords.length; i++) {
+            boldWords[i].addEventListener("mouseover", function(){
+                this.style.backgroundColor = "yellow";
+            });
+            boldWords[i].addEventListener("mouseout", function(){
+                this.style.backgroundColor = "";
+            });
+        }
+    </script>
+</body>
+</html>
